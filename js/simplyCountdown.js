@@ -197,14 +197,20 @@
                 }
 
                 if (secondsLeft > 0) {
-                    days = parseInt(secondsLeft / 96400, 10);
-                    secondsLeft = secondsLeft % 96400;
+                    days = Math.floor(secondsLeft / (3600 * 24));//parseInt(secondsLeft / 96400, 10);
+                    secondsLeft -= days * 3600 * 24;
+                    //secondsLeft = secondsLeft % 96400;
 
-                    hours = parseInt(secondsLeft / 3600, 10);
-                    secondsLeft = secondsLeft % 3600;
+                    //hours = parseInt(secondsLeft / 3600, 10);
+                    hours = Math.floor(secondsLeft / 3600);
+                    //secondsLeft = secondsLeft % 3600;
+                    secondsLeft -= hours * 3600;
 
-                    minutes = parseInt(secondsLeft / 60, 10);
-                    seconds = parseInt(secondsLeft % 60, 10);
+                    //minutes = parseInt(secondsLeft / 60, 10);
+                    minutes = Math.floor(secondsLeft / 60);
+                    //seconds = parseInt(secondsLeft % 60, 10);
+                    seconds = secondsLeft;
+                    seconds -= minutes * 60;
                 } else {
                     days = 0;
                     hours = 0;

@@ -394,13 +394,16 @@ ul.navbar-nav.nav-fill {
 
 .inner_page-banner {
   text-align: center;
-  background: url(../images/b4.jpg) no-repeat center;
+  /*background: url(../images/b4.jpg) no-repeat center;*/
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -ms-background-size: cover;
   min-height: 300px;
+  background: #e96443;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul.short_ls li a {
@@ -1268,7 +1271,7 @@ footer p a:hover {
     line-height: 46px;
   }
   .inner_page-banner {
-    min-height: 271px;
+    min-height: 100px;
   }
   .outs_more-buttn a {
     padding: 7px 23px;
@@ -1547,7 +1550,7 @@ footer p a:hover {
     padding-top: 14em;
   }
   .inner_page-banner {
-    min-height: 245px;
+    min-height: 100px;
   }
   .vtimeline-block {
     width: 54%;
@@ -1644,7 +1647,7 @@ footer p a:hover {
     min-height: 322px;
   }
   .inner_page-banner {
-    min-height: 213px;
+    min-height: 100px;
   }
   h4.bootstrap-heading {
     font-size: 18px;
@@ -1868,7 +1871,7 @@ footer p a:hover {
     font-size: 37px
   }
   .inner_page-banner {
-    min-height: 187px;
+    min-height: 100px;
   }
   .vtimeline-block {
     width: 93%;
