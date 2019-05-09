@@ -1373,6 +1373,8 @@ footer p a:hover {
   }
   .story-img img {
     width: 99%;
+    height:120px !important;
+    width: 120px !important;
   }
   .vtimeline-date {
     font-size: 16px;
@@ -2021,7 +2023,7 @@ footer p a:hover {
     width: 67%;
   }
   .wed-both {
-    left: 10px;
+    left: -38px;
     width: 67%;
   }
   .simply-countdown>.simply-section {

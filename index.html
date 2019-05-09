@@ -144,7 +144,7 @@
     </section>
     <!--//about-->
     <!--Wedding-day -->
-    <section class="date py-lg-4 py-md-3 py-sm-3 py-3">
+    <section class="date py-lg-4 py-md-3 py-sm-3 py-3" style="margin-top:100px">
         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Save The Date</h3>
             <div class="examples ">
@@ -483,6 +483,15 @@
                 easingType: 'easeOutQuart'
             });
 
+            
+        });
+        $('.navbar-toggler-icon').click(function () {
+            if ($('#navbarSupportedContent').hasClass('collapse')) {
+                $('#navbarSupportedContent').removeClass("collapse");
+            } else {
+                $('#navbarSupportedContent').addClass("collapse");
+            }
+            
         });
     </script>
     <!-- //here ends scrolling icon -->
