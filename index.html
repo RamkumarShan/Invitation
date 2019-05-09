@@ -470,7 +470,7 @@
     <!-- here stars scrolling icon -->
     <script>
         $(document).ready(function () {
-
+            
             var defaults = {
                 containerID: 'toTop', // fading element id
                 containerHoverID: 'toTopHover', // fading element hover id
@@ -485,6 +485,10 @@
 
             
         });
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // some code..
+        alert("Open in desktop view for better visual");
+        }
         $('.navbar-toggler-icon').click(function () {
             if ($('#navbarSupportedContent').hasClass('collapse')) {
                 $('#navbarSupportedContent').removeClass("collapse");
